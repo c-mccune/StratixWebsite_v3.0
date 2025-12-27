@@ -90,8 +90,8 @@
 
 .footer-bottom {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 24px;
   padding-top: 40px;
 }
 
@@ -100,6 +100,24 @@
   font-size: 14px;
   font-weight: 400;
   color: var(--text-white-50);
+}
+
+.footer-disclaimer {
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-disclaimer a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-disclaimer a:hover {
+  color: var(--text-white);
 }
 
 .footer-social {
@@ -168,6 +186,10 @@
 
   .footer-copyright {
     font-size: 13px;
+  }
+
+  .footer-disclaimer {
+    font-size: 12px;
   }
 }
 
