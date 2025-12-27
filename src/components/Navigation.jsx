@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navigation.css';
+import stratixLogo from '../assets/stratix-logo.png';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,19 +20,11 @@ const Navigation = () => {
       <div className="nav-container">
         <div className="nav-content">
           <a href="/" className="logo">
-            <svg width="110" height="20" viewBox="0 0 745 133" fill="none">
-              <text
-                x="0"
-                y="100"
-                fontFamily="DM Sans, sans-serif"
-                fontSize="120"
-                fontWeight="500"
-                fill="white"
-                letterSpacing="-2"
-              >
-                STRATIX
-              </text>
-            </svg>
+            <img 
+              src={stratixLogo} 
+              alt="Stratix" 
+              className="logo-image"
+            />
           </a>
 
           <button

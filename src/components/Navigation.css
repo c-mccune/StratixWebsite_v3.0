@@ -43,6 +43,11 @@
   width: auto;
 }
 
+.logo-image {
+  height: 24px;
+  width: auto;
+}
+
 .mobile-menu-toggle {
   display: none;
   background: none;

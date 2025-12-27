@@ -29,6 +29,7 @@
   background-repeat: no-repeat;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  filter: grayscale(100%);
 }
 
 .carousel-slide.active {
