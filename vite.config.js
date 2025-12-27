@@ -5,4 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/StratixWebsite_v3.0/',
+  build: {
+    outDir: 'docs',
+    emptyOutDir: true,
+  },
 })
