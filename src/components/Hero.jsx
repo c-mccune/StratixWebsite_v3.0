@@ -70,7 +70,7 @@ const Hero = () => {
         <div className="container">
           <div className="hero-text">
             <h1 className="hero-title fade-in-up" style={{ animationDelay: '0.5s' }}>
-              Building Tomorrow's Exits Today.
+              Building Tomorrow's<br />Exits Today.
             </h1>
             <p className="hero-description fade-in-up" style={{ animationDelay: '0.7s' }}>
               We guide founders and management teams through every stage of the M&A lifecycle—from
