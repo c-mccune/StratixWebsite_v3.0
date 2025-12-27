@@ -7,6 +7,5 @@ export default defineConfig({
   base: '/StratixWebsite_v3.0/',
   build: {
     outDir: 'docs',
-    emptyOutDir: true,
   },
 })
