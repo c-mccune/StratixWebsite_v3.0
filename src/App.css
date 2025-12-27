@@ -3,6 +3,7 @@
 
 :root {
   /* Colors */
+  --primary-green: #3d8b7a;
   --primary-blue: #0055ff;
   --bg-dark: #0f0f0f;
   --bg-dark-gradient: linear-gradient(180deg, #3c3c3c 39%, #0f0f0f 75%);
@@ -97,14 +98,15 @@ html {
 }
 
 .btn-primary {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-green);
   color: var(--text-white);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: none;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 85, 255, 0.3);
+  box-shadow: 0 5px 15px rgba(61, 139, 122, 0.4);
+  background-color: #358272;
 }
 
 .btn-secondary {
@@ -118,14 +120,27 @@ html {
 }
 
 .btn-ghost {
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(2.5px);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
   color: var(--text-white);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .btn-ghost:hover {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
+}
+
+/* Hero-specific button styles */
+.hero .btn-primary {
+  background-color: var(--text-white);
+  color: #1a1a1a;
+  border: none;
+}
+
+.hero .btn-primary:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
 }
 
 /* Fade in animations */

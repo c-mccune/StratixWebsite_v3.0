@@ -73,8 +73,8 @@ const Hero = () => {
               Building Tomorrow's<br />Exits Today.
             </h1>
             <p className="hero-description fade-in-up" style={{ animationDelay: '0.7s' }}>
-              We guide founders and management teams through every stage of the M&A lifecycle—from
-              strategic planning and positioning to transaction execution and post-close integration.
+              We guide ambitious founders and management teams through transformative capital events,<br />
+              providing tech-enabled end-to-end infrastructure from bookkeeping to transaction advisory
             </p>
             <div className="hero-buttons fade-in-up" style={{ animationDelay: '1.1s' }}>
               <a href="/work-with-us" className="btn btn-primary">
