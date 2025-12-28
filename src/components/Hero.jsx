@@ -74,8 +74,7 @@ const Hero = () => {
               Building Tomorrow's<br />Exits Today.
             </h1>
             <p className="hero-description fade-in-up" style={{ animationDelay: '0.7s' }}>
-              We guide ambitious founders and management teams through transformative capital events,<br />
-              providing tech-enabled end-to-end infrastructure from bookkeeping to transaction advisory
+              We guide ambitious founders and management teams through transformative capital events, providing tech-enabled end-to-end infrastructure from bookkeeping to transaction advisory
             </p>
             <div className="hero-buttons fade-in-up" style={{ animationDelay: '1.1s' }}>
               <Link to="/work-with-us" className="btn btn-primary">
