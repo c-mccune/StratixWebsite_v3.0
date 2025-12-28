@@ -68,7 +68,7 @@
 .logo-track {
   display: flex;
   gap: 80px;
-  animation: scroll 30s linear infinite;
+  animation: scroll 60s linear infinite;
   will-change: transform;
 }
 
@@ -117,7 +117,7 @@
 }
 
 .logo-track-reverse {
-  animation: scroll-reverse 30s linear infinite;
+  animation: scroll-reverse 60s linear infinite;
 }
 
 /* Responsive Styles */
