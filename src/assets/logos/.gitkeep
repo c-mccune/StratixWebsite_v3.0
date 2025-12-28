@@ -1,0 +1,23 @@
+# This file ensures the logos folder is tracked by Git
+# Add your logo PNG files to this folder following the naming convention in LogoWall.jsx
+#
+# Row 1 (scrolls left):
+#   row1-01-liveflow.png
+#   row1-02-qed-investors.png
+#   row1-03-practicecfo.png
+#   row1-04-vestigo-ventures.png
+#   row1-05-arch.png
+#   row1-06-zamp.png
+#   row1-07-usaa.png
+#   row1-08-mucker-capital.png
+#
+# Row 2 (scrolls right):
+#   row2-01-humanity-labs.png
+#   row2-02-commerce-ventures.png
+#   row2-03-testassure.png
+#   row2-04-redesign-health.png
+#   row2-05-oak-hcft.png
+#   row2-06-goreact.png
+#   row2-07-aquiline.png
+#   row2-08-motive-partners.png
+
