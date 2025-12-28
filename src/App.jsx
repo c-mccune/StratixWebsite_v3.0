@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/StratixWebsite_v3.0">
       <div className="app">
         <Navigation />
         <Routes>
