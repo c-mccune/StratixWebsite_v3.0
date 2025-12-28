@@ -1,28 +1,57 @@
 import React from 'react';
 import './LogoWall.css';
 
+// =============================================================================
+// LOGO IMPORTS - Row 1 (scrolls left)
+// =============================================================================
+// Add your logo files to: src/assets/logos/
+// Naming convention: row#-##-company-name.png (lowercase, hyphens for spaces)
+// Recommended size: 150x60 pixels, PNG with transparent background
+// =============================================================================
+import logo_row1_01 from '../assets/logos/row1-01-liveflow.png';
+import logo_row1_02 from '../assets/logos/row1-02-qed-investors.png';
+import logo_row1_03 from '../assets/logos/row1-03-practicecfo.png';
+import logo_row1_04 from '../assets/logos/row1-04-vestigo-ventures.png';
+import logo_row1_05 from '../assets/logos/row1-05-arch.png';
+import logo_row1_06 from '../assets/logos/row1-06-zamp.png';
+import logo_row1_07 from '../assets/logos/row1-07-usaa.png';
+import logo_row1_08 from '../assets/logos/row1-08-mucker-capital.png';
+
+// =============================================================================
+// LOGO IMPORTS - Row 2 (scrolls right)
+// =============================================================================
+import logo_row2_01 from '../assets/logos/row2-01-humanity-labs.png';
+import logo_row2_02 from '../assets/logos/row2-02-commerce-ventures.png';
+import logo_row2_03 from '../assets/logos/row2-03-testassure.png';
+import logo_row2_04 from '../assets/logos/row2-04-redesign-health.png';
+import logo_row2_05 from '../assets/logos/row2-05-oak-hcft.png';
+import logo_row2_06 from '../assets/logos/row2-06-goreact.png';
+import logo_row2_07 from '../assets/logos/row2-07-aquiline.png';
+import logo_row2_08 from '../assets/logos/row2-08-motive-partners.png';
+
 const LogoWall = () => {
-  // Partner companies - using placeholder logos for demonstration
+  // Row 1 - scrolls left
   const partnersRow1 = [
-    { name: 'Accenture', logo: 'https://via.placeholder.com/150x60/1d1d1d/ffffff?text=Accenture' },
-    { name: 'Deloitte', logo: 'https://via.placeholder.com/150x60/1d1d1d/ffffff?text=Deloitte' },
-    { name: 'PwC', logo: 'https://via.placeholder.com/150x60/1d1d1d/ffffff?text=PwC' },
-    { name: 'KPMG', logo: 'https://via.placeholder.com/150x60/1d1d1d/ffffff?text=KPMG' },
-    { name: 'EY', logo: 'https://via.placeholder.com/150x60/1d1d1d/ffffff?text=EY' },
-    { name: 'McKinsey', logo: 'https://via.placeholder.com/150x60/1d1d1d/ffffff?text=McKinsey' },
-    { name: 'BCG', logo: 'https://via.placeholder.com/150x60/1d1d1d/ffffff?text=BCG' },
-    { name: 'Bain', logo: 'https://via.placeholder.com/150x60/1d1d1d/ffffff?text=Bain' }
+    { name: 'LiveFlow', logo: logo_row1_01 },
+    { name: 'QED Investors', logo: logo_row1_02 },
+    { name: 'PracticeCFO', logo: logo_row1_03 },
+    { name: 'Vestigo Ventures', logo: logo_row1_04 },
+    { name: 'Arch', logo: logo_row1_05 },
+    { name: 'Zamp', logo: logo_row1_06 },
+    { name: 'USAA', logo: logo_row1_07 },
+    { name: 'Mucker Capital', logo: logo_row1_08 },
   ];
 
+  // Row 2 - scrolls right (reverse direction)
   const partnersRow2 = [
-    { name: 'Goldman', logo: 'https://via.placeholder.com/150x60/1d1d1d/ffffff?text=Goldman' },
-    { name: 'Morgan Stanley', logo: 'https://via.placeholder.com/150x60/1d1d1d/ffffff?text=Morgan+Stanley' },
-    { name: 'JPMorgan', logo: 'https://via.placeholder.com/150x60/1d1d1d/ffffff?text=JPMorgan' },
-    { name: 'Citi', logo: 'https://via.placeholder.com/150x60/1d1d1d/ffffff?text=Citi' },
-    { name: 'Blackstone', logo: 'https://via.placeholder.com/150x60/1d1d1d/ffffff?text=Blackstone' },
-    { name: 'KKR', logo: 'https://via.placeholder.com/150x60/1d1d1d/ffffff?text=KKR' },
-    { name: 'Carlyle', logo: 'https://via.placeholder.com/150x60/1d1d1d/ffffff?text=Carlyle' },
-    { name: 'Apollo', logo: 'https://via.placeholder.com/150x60/1d1d1d/ffffff?text=Apollo' }
+    { name: 'Humanity Labs', logo: logo_row2_01 },
+    { name: 'Commerce Ventures', logo: logo_row2_02 },
+    { name: 'TestAssure', logo: logo_row2_03 },
+    { name: 'Redesign Health', logo: logo_row2_04 },
+    { name: 'Oak HC/FT', logo: logo_row2_05 },
+    { name: 'GoReact', logo: logo_row2_06 },
+    { name: 'Aquiline', logo: logo_row2_07 },
+    { name: 'Motive Partners', logo: logo_row2_08 },
   ];
 
   return (
