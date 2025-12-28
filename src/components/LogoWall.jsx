@@ -59,9 +59,6 @@ const LogoWall = () => {
       <div className="container">
         <div className="logo-wall-header">
           <h2 className="section-title">Trusted by Industry Leaders</h2>
-          <p className="section-description">
-            We've partnered with companies across industries to deliver successful M&A outcomes.
-          </p>
         </div>
       </div>
 
