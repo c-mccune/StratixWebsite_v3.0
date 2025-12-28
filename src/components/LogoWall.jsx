@@ -71,32 +71,28 @@ const LogoWall = () => {
         {/* Row 1 - scrolls left */}
         <div className="logo-carousel">
           <div className="logo-track">
-            {partnersRow1.map((partner, index) => (
-              <div key={`row1-1-${index}`} className="logo-item">
-                <img src={partner.logo} alt={partner.name} />
-              </div>
-            ))}
-            {partnersRow1.map((partner, index) => (
-              <div key={`row1-2-${index}`} className="logo-item">
-                <img src={partner.logo} alt={partner.name} />
-              </div>
-            ))}
+            {/* Render logos 4 times for seamless infinite loop */}
+            {[...Array(4)].map((_, setIndex) =>
+              partnersRow1.map((partner, index) => (
+                <div key={`row1-${setIndex}-${index}`} className="logo-item">
+                  <img src={partner.logo} alt={partner.name} />
+                </div>
+              ))
+            )}
           </div>
         </div>
 
         {/* Row 2 - scrolls right (reverse) */}
         <div className="logo-carousel">
           <div className="logo-track logo-track-reverse">
-            {partnersRow2.map((partner, index) => (
-              <div key={`row2-1-${index}`} className="logo-item">
-                <img src={partner.logo} alt={partner.name} />
-              </div>
-            ))}
-            {partnersRow2.map((partner, index) => (
-              <div key={`row2-2-${index}`} className="logo-item">
-                <img src={partner.logo} alt={partner.name} />
-              </div>
-            ))}
+            {/* Render logos 4 times for seamless infinite loop */}
+            {[...Array(4)].map((_, setIndex) =>
+              partnersRow2.map((partner, index) => (
+                <div key={`row2-${setIndex}-${index}`} className="logo-item">
+                  <img src={partner.logo} alt={partner.name} />
+                </div>
+              ))
+            )}
           </div>
         </div>
       </div>
