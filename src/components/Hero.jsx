@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
@@ -77,12 +78,12 @@ const Hero = () => {
               providing tech-enabled end-to-end infrastructure from bookkeeping to transaction advisory
             </p>
             <div className="hero-buttons fade-in-up" style={{ animationDelay: '1.1s' }}>
-              <a href="/work-with-us" className="btn btn-primary">
+              <Link to="/work-with-us" className="btn btn-primary">
                 Work With Us
-              </a>
-              <a href="/about" className="btn btn-ghost">
+              </Link>
+              <Link to="/about" className="btn btn-ghost">
                 What is Stratix?
-              </a>
+              </Link>
             </div>
           </div>
         </div>

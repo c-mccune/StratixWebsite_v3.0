@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Navigation.css';
 import stratixLogo from '../assets/stratix-logo.png';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,17 +17,24 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location]);
+
+  const isActive = (path) => location.pathname === path;
+
   return (
     <nav className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-content">
-          <a href="/" className="logo">
-            <img 
-              src={stratixLogo} 
-              alt="Stratix" 
+          <Link to="/" className="logo">
+            <img
+              src={stratixLogo}
+              alt="Stratix"
               className="logo-image"
             />
-          </a>
+          </Link>
 
           <button
             className="mobile-menu-toggle"
@@ -39,18 +48,18 @@ const Navigation = () => {
           </button>
 
           <div className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
-            <a href="/" className="nav-link active">
+            <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`}>
               <span className="gradient-text">Home</span>
-            </a>
-            <a href="/about" className="nav-link">
+            </Link>
+            <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`}>
               <span className="gradient-text">About</span>
-            </a>
-            <a href="/services" className="nav-link">
+            </Link>
+            <Link to="/services" className={`nav-link ${isActive('/services') ? 'active' : ''}`}>
               <span className="gradient-text">Services</span>
-            </a>
-            <a href="/work-with-us" className="btn btn-primary">
+            </Link>
+            <Link to="/work-with-us" className="btn btn-primary">
               Work With Us
-            </a>
+            </Link>
           </div>
         </div>
       </div>
