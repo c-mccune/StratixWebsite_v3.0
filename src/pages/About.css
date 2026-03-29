@@ -633,7 +633,7 @@
   }
 
   .mission-text {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .mission-visual {
@@ -654,7 +654,7 @@
   }
 
   .leadin-text {
-    font-size: 32px;
+    font-size: 28px;
     letter-spacing: -1px;
   }
 
@@ -683,7 +683,7 @@
   }
 
   .section-title-large {
-    font-size: 36px;
+    font-size: 28px;
     letter-spacing: -2px;
   }
 
@@ -700,29 +700,11 @@
   }
 
   .stage-headline {
-    font-size: 32px;
+    font-size: 26px;
     letter-spacing: -1px;
   }
 
   .stage-title {
     font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .mission-text {
-    font-size: 18px;
-  }
-
-  .leadin-text {
-    font-size: 28px;
-  }
-
-  .section-title-large {
-    font-size: 28px;
-  }
-
-  .stage-headline {
-    font-size: 26px;
   }
 }
