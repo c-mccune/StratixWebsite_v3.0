@@ -191,13 +191,13 @@
   }
 
   .hero-title {
-    font-size: 48px;
+    font-size: 40px;
     letter-spacing: -1.5px;
     margin-bottom: 20px;
   }
 
   .hero-description {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 30px;
   }
 
@@ -213,7 +213,7 @@
   }
 
   .carousel-controls {
-    bottom: 80px;
+    bottom: 60px;
     padding: 0 30px;
   }
 
@@ -225,24 +225,6 @@
   .carousel-arrow svg {
     width: 20px;
     height: 20px;
-  }
-
-  .carousel-pagination {
-    bottom: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 40px;
-  }
-
-  .hero-description {
-    font-size: 15px;
-  }
-
-  .carousel-controls {
-    bottom: 60px;
   }
 
   .carousel-pagination {

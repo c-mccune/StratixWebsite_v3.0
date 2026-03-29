@@ -149,12 +149,12 @@
   }
 
   .section-title {
-    font-size: 36px;
+    font-size: 30px;
     letter-spacing: -1px;
   }
 
   .section-description {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .logo-carousel-wrapper {
@@ -164,28 +164,6 @@
   .logo-carousel-wrapper::before,
   .logo-carousel-wrapper::after {
     width: 100px;
-  }
-
-  .logo-track {
-    gap: 40px;
-  }
-
-  .logo-item {
-    height: 50px;
-  }
-
-  .logo-item img {
-    max-width: 120px;
-  }
-}
-
-@media (max-width: 480px) {
-  .section-title {
-    font-size: 30px;
-  }
-
-  .section-description {
-    font-size: 15px;
   }
 
   .logo-track {
