@@ -98,13 +98,14 @@
   font-weight: 500;
 }
 
-/* Mobile Styles */
-@media (max-width: 1199px) {
+/* Tablet 810–1199px: align horizontal padding with .container */
+@media (max-width: 1199px) and (min-width: 810px) {
   .nav-container {
-    padding: 0 70px;
+    padding: 0 50px;
   }
 }
 
+/* Phone ≤809px: hamburger + drawer */
 @media (max-width: 809px) {
   .nav-container {
     padding: 0 30px;

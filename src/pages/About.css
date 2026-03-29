@@ -592,9 +592,9 @@
 }
 
 /* ===========================
-   Responsive Styles
+   Responsive: desktop ≥1440 (base), laptop+tablet 810–1439, phone ≤809
    =========================== */
-@media (max-width: 1199px) {
+@media (max-width: 1439px) and (min-width: 810px) {
   .mission-text {
     font-size: 24px;
   }

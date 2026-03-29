@@ -2,6 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,700;1,900&family=DM+Sans:wght@500;700&display=swap');
 
 :root {
+  /*
+   * Viewport tiers (width in CSS px)
+   * Desktop — min-width: 1440px (base styles below apply here)
+   * Laptop  — 1200px–1439px
+   * Tablet  — 810px–1199px
+   * Phone   — max-width: 809px
+   */
+  --bp-desktop-min: 1440px;
+  --bp-laptop-min: 1200px;
+  --bp-laptop-max: 1439px;
+  --bp-tablet-min: 810px;
+  --bp-tablet-max: 1199px;
+  --bp-phone-max: 809px;
+
   /* Colors */
   --primary-green: #3d8b7a;
   --primary-blue: #0055ff;
@@ -61,13 +75,13 @@ html {
   padding: 0 120px;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1439px) and (min-width: 1200px) {
   .container {
     padding: 0 70px;
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1199px) and (min-width: 810px) {
   .container {
     padding: 0 50px;
   }
@@ -101,6 +115,12 @@ html {
   background-color: var(--primary-green);
   color: var(--text-white);
   border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible,
+.btn-primary:visited {
+  color: var(--text-white);
 }
 
 .btn-primary:hover {
@@ -137,6 +157,12 @@ html {
   background-color: var(--text-white);
   color: #1a1a1a;
   border: none;
+}
+
+.hero .btn-primary:hover,
+.hero .btn-primary:focus-visible,
+.hero .btn-primary:visited {
+  color: #1a1a1a;
 }
 
 .hero .btn-primary:hover {

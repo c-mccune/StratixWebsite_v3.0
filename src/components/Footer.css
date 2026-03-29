@@ -142,8 +142,8 @@
   transform: translateY(-2px);
 }
 
-/* Responsive Styles */
-@media (max-width: 1199px) {
+/* Laptop + tablet: 810px–1439px */
+@media (max-width: 1439px) and (min-width: 810px) {
   .footer-grid {
     gap: 60px;
   }
@@ -153,6 +153,7 @@
   }
 }
 
+/* Phone ≤809px */
 @media (max-width: 809px) {
   .footer {
     padding: 60px 0 30px;

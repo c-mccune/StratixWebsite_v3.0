@@ -1,71 +1,41 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { HalftoneDots } from '@paper-design/shaders-react';
 import './Hero.css';
 
+/**
+ * From Paper
+ * https://app.paper.design/file/01KMVT6MF41NQAF8PJYDEZTESD?page=01KMVT6MF4J3XBWHVETFQ6R893&node=U-0
+ */
 const Hero = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const slides = [
-    {
-      id: 1,
-      image: 'https://images.unsplash.com/photo-1449034446853-66c86144b0ad?q=80&w=2070',
-      alt: 'San Francisco Golden Gate Bridge'
-    },
-    {
-      id: 2,
-      image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=2044',
-      alt: 'Chicago Skyline'
-    },
-    {
-      id: 3,
-      image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=2070',
-      alt: 'London Eye'
-    },
-    {
-      id: 4,
-      image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2094',
-      alt: 'Tokyo Tower'
-    },
-    {
-      id: 5,
-      image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=2070',
-      alt: 'New York Flatiron Building'
-    }
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [slides.length]);
-
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
-  };
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
-
   return (
     <section className="hero">
-      <div className="hero-carousel">
-        {slides.map((slide, index) => (
-          <div
-            key={slide.id}
-            className={`carousel-slide ${index === currentSlide ? 'active' : ''}`}
-            style={{ backgroundImage: `url(${slide.image})` }}
-          >
-            <div className="carousel-overlay"></div>
-          </div>
-        ))}
+      <div className="hero-background" aria-hidden="true">
+        <HalftoneDots
+          contrast={0.4}
+          originalColors={false}
+          inverted={false}
+          grid="hex"
+          radius={1.25}
+          size={0.5}
+          scale={1}
+          image="https://paper.design/flowers.webp"
+          grainMixer={0.2}
+          grainOverlay={0.2}
+          grainSize={0.5}
+          type="gooey"
+          fit="cover"
+          colorFront="#3D8B7A"
+          colorBack="#00000000"
+          className="hero-halftone"
+          style={{
+            backgroundColor: '#F2F1E8',
+            width: '100%',
+            height: '100%',
+          }}
+        />
       </div>
+      <div className="hero-overlay" aria-hidden="true" />
 
       <div className="hero-content">
         <div className="container">
@@ -86,38 +56,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="carousel-controls">
-        <button
-          className="carousel-arrow carousel-arrow-left"
-          onClick={prevSlide}
-          aria-label="Previous slide"
-        >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M15 18L9 12L15 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </button>
-        <button
-          className="carousel-arrow carousel-arrow-right"
-          onClick={nextSlide}
-          aria-label="Next slide"
-        >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M9 18L15 12L9 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </button>
-      </div>
-
-      <div className="carousel-pagination">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            className={`pagination-dot ${index === currentSlide ? 'active' : ''}`}
-            onClick={() => goToSlide(index)}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
       </div>
     </section>
   );
